@@ -22,9 +22,7 @@
 # find_missing([]) should return 1
 
 def find_missing(numbers):
-    actual_sum = 0
-    for number in numbers:
-        actual_sum += number
+    actual_sum = sum(numbers)
     max_number = len(numbers) + 1
     expected_sum = (max_number * (max_number + 1) // 2)
     return expected_sum - actual_sum
