@@ -13,5 +13,7 @@ def gift_paring(names):
     return [("Ruth", "James"), ("James", "Isabel"), ("Isabel", "Ruth")]
 
 
-print(gift_paring(["James", "Ruth", "Isabel", "Michael", "Luis", "Oliver"]))
+if __name__ == '__main__':
+    print(gift_paring(["James", "Ruth", "Isabel", "Michael", "Luis", "Oliver"]))
+
 
