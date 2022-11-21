@@ -1,3 +1,6 @@
+import random
+
+
 # Your friends have decided to have a secret santa gift scheme this Christmas.
 # This is when all your colleagues and yourselves write their names in a small piece of paper,
 # then you all put the names in a hat. Every person then picks a name from the hat and buys a small gift to that person.
@@ -10,8 +13,14 @@
 # Assume that there will be at least 2 names in the list
 # Assume that all names are unique too
 def gift_paring(names):
-    return [("Ruth", "James"), ("James", "Isabel"), ("Isabel", "Ruth")]
+    result = []
+    random.shuffle(names)
+    for i in range(len(names)):
+        pair = names[i], names[(i + 1) % len(names)]
+        result.append(pair)
+    return result
 
 
-print(gift_paring(["James", "Ruth", "Isabel", "Michael", "Luis", "Oliver"]))
+if __name__ == '__main__':
+    print(gift_paring(["James", "Ruth", "Isabel", "Michael", "Luis", "Oliver"]))
 
