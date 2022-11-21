@@ -7,7 +7,7 @@
 # should return 3
 #
 # Params:
-#   Input 'numbers' is a list containing the range [1, n], where n is the length of 8
+#   Input 'numbers' is a list containing the range [1, n], where n is the length of list + 1
 #   All numbers are unique (no duplicates)
 #   Only one number is missing
 #
