@@ -2,7 +2,7 @@ import unittest
 from coding_puzzles import missing_number
 
 
-class TestStringMethods(unittest.TestCase):
+class TestMissingNumber(unittest.TestCase):
     def test_missing_6(self):
         self.assertEqual(6, missing_number.find_missing([2, 4, 7, 3, 8, 5, 1]))
 
