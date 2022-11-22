@@ -26,7 +26,23 @@
 
 
 def number_of_ways_to_decode(encoding):
-    return -1
+    return number_of_ways(encoding, {})
+
+
+def number_of_ways(encoding, cache):
+    if encoding in cache:
+        return cache[encoding]
+    if encoding[0] == "0":
+        return 0
+    if len(encoding) == 1:
+        return 1
+
+    choose_two = 0
+    if int(encoding[:2]) <= 26:
+        choose_two = 1 if len(encoding[2:]) == 0 else number_of_ways(encoding[2:], cache)
+    result = number_of_ways(encoding[1:], cache) + choose_two
+    cache[encoding] = result
+    return result
 
 
 if __name__ == '__main__':
