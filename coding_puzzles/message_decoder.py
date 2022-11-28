@@ -8,7 +8,7 @@
 # "1 9 1 7 3" -> "A I A G C"
 # "1 9 17 3" -> "A I Q C"
 # "19 1 7 3" -> "S A G C"
-# "19 17 3" -> "A Q C"
+# "19 17 3" -> "S Q C"
 # We cannot use "1 91 7 3" because "91" is more than 26
 # The message "11106" can be decoded in 2 ways:
 # "1 1 10 6" -> "A A J F"
