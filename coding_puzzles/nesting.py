@@ -20,6 +20,8 @@ def check_if_properly_nested(text):
     for c in text:
         if c in ["[", "(", "{"]:
             stack.append(c)
+        elif not stack:
+            return False
         elif c == "]" and stack.pop() != "[":
             return False
         elif c == "}" and stack.pop() != "{":
