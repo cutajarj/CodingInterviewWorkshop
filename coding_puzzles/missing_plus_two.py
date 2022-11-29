@@ -13,4 +13,16 @@
 #
 
 def find_missing_number(numbers):
-    return -100
+    start = 0
+    finish = len(numbers) - 1
+    mid = 0
+    while finish - start >= 0:
+        mid = start + (finish - start) // 2
+        if numbers[mid] == mid * 2:
+            start = mid + 1
+        else:
+            finish = mid - 1
+    if numbers[mid] == mid * 2:
+        return numbers[mid] + 2
+    else:
+        return numbers[mid] - 2
