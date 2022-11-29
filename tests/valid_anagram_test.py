@@ -28,5 +28,5 @@ class TestValidAnagram(unittest.TestCase):
         self.assertTrue(valid_anagram.is_anagram("", ""))
 
     def test_bad_length(self):
-        self.assertTrue(valid_anagram.is_anagram("batt", "tab"))
+        self.assertFalse(valid_anagram.is_anagram("batt", "tab"))
 
