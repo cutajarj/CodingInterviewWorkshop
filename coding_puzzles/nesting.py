@@ -16,5 +16,14 @@
 # text = "()[]{}()[]{}", result = true
 
 def check_if_properly_nested(text):
-    return False
-
+    stack = []
+    for c in text:
+        if c in ["[", "(", "{"]:
+            stack.append(c)
+        elif c == "]" and stack.pop() != "[":
+            return False
+        elif c == "}" and stack.pop() != "{":
+            return False
+        elif c == ")" and stack.pop() != "(":
+            return False
+    return len(stack) == 0
