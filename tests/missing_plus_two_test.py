@@ -17,5 +17,5 @@ class TestMissingPlusTwo(unittest.TestCase):
     # checks no linear algorithm was used
     def test_missing_large(self):
         a = list(range(0, 19999998, 2))
-        a[9999999] = 20000000
+        a.append(20000000)
         self.assertEqual(19999998, missing_plus_two.find_missing_number(a))
