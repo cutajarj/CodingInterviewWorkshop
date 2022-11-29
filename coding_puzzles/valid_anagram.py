@@ -18,5 +18,12 @@
 # s = "", t = "" result = true
 # s = "batt", t = "tab" result = false
 def is_anagram(s, t):
-    return False
+    table = [0] * 256
+    for c in s:
+        table[ord(c)] += 1
+    for c in t:
+        table[ord(c)] -= 1
+        if table[ord(c)] < 0:
+            return False
+    return len(s) == len(t)
 
