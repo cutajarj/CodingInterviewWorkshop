@@ -16,17 +16,17 @@ class TestNesting(unittest.TestCase):
         self.assertFalse(nesting.check_if_properly_nested("[(])"))
 
     def test_triple_nested(self):
-        self.assertFalse(nesting.check_if_properly_nested("[{()}]"))
+        self.assertTrue(nesting.check_if_properly_nested("[{()}]"))
 
     def test_triple_round_nested(self):
-        self.assertFalse(nesting.check_if_properly_nested("((()))"))
+        self.assertTrue(nesting.check_if_properly_nested("((()))"))
 
     def test_bad_triple_round_nested(self):
-        self.assertFalse(nesting.check_if_properly_nested("((())"))
+        self.assertTrue(nesting.check_if_properly_nested("((())"))
 
     def test_bad_triple_nested(self):
         self.assertFalse(nesting.check_if_properly_nested("()]]"))
 
     def test_multi(self):
-        self.assertFalse(nesting.check_if_properly_nested("()[]{}()[]{}"))
+        self.assertTrue(nesting.check_if_properly_nested("()[]{}()[]{}"))
 
