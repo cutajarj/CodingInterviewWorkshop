@@ -39,7 +39,10 @@ def number_of_ways(encoding, cache):
 
     choose_two = 0
     if int(encoding[:2]) <= 26:
-        choose_two = 1 if len(encoding[2:]) == 0 else number_of_ways(encoding[2:], cache)
+        if len(encoding[2:]) == 0:
+            choose_two = 1
+        else:
+            choose_two = number_of_ways(encoding[2:], cache)
     result = number_of_ways(encoding[1:], cache) + choose_two
     cache[encoding] = result
     return result
