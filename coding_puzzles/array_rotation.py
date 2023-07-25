@@ -1,3 +1,6 @@
 
 def rotate(a, k):
-    return ""
+    result = [""] * len(a)
+    for i in range(len(a)):
+        result[(i + k) % len(a)] = a[i]
+    return result
