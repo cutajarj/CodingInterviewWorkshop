@@ -27,3 +27,4 @@ def print_sudoku():
 
 calculate_cell(0, 0)
 print_sudoku()
+
