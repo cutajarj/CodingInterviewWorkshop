@@ -26,10 +26,10 @@ def is_valid(n, row_number, col_number, sudoku):
 def generate_sudoku():
     sudoku = [[0 for i in range(9)] for j in range(9)]
     calculate_cell(0, 0, sudoku)
-    for i in range(9):
-        print(sudoku[i])
     return sudoku
 
 
-generate_sudoku()
-
+if __name__ == '__main__':
+    sudoku = generate_sudoku()
+    for i in range(9):
+        print(sudoku[i])
