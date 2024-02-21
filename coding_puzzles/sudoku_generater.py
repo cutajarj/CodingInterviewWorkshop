@@ -7,6 +7,20 @@ import random
 #   each of the 9, 3x3 boxes don't contain duplicate numbers
 #   only numbers from 1 to 9 are allowed in each cell
 def calculate_cell(row_number, col_number, sudoku):
+    if row_number > 8:
+        return True
+    rand_numbers = list(range(1, 10))
+    random.shuffle(rand_numbers)
+    for n in rand_numbers:
+        if is_valid(n, row_number, col_number, sudoku):
+            sudoku[row_number][col_number] = n
+            r, c = row_number, col_number + 1
+            if c == 9:
+                r, c = row_number + 1, 0
+            if calculate_cell(r, c, sudoku):
+                return True
+            else:
+                sudoku[row_number][col_number] = 0
     return False
 
 
