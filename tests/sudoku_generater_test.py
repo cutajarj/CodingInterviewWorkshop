@@ -1,6 +1,6 @@
 import unittest
 
-from coding_puzzles import sudoku_generater
+from coding_puzzles import sudoku_generator
 
 
 class TestSudokuGenerator(unittest.TestCase):
