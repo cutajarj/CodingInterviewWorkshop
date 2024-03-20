@@ -20,7 +20,7 @@ def is_valid(sudoku):
             numbers_cols[n_col - 1] = 0
             r, c = (i % 3 * 3) + j % 3, (i // 3 * 3) + j // 3
             n_box = sudoku[r][c]
-            numbers_box[n_box] = 0
+            numbers_box[n_box - 1] = 0
         if sum(numbers_rows) + sum(numbers_cols) + sum(numbers_box) != 0:
             return False
 
