@@ -5,14 +5,14 @@ from coding_puzzles import sudoku_generator
 
 class TestSudokuGenerator(unittest.TestCase):
     def test_rows(self):
-        sodoku = sudoku_generater.generate_sudoku()
+        sodoku = sudoku_generator.generate_sudoku()
         numbers = set(range(1, 10))
         for r in range(9):
             row = set(sodoku[r])
             self.assertEqual(numbers, row)
 
     def test_cols(self):
-        sodoku = sudoku_generater.generate_sudoku()
+        sodoku = sudoku_generator.generate_sudoku()
         numbers = set(range(1, 10))
         for c in range(9):
             col = set()
@@ -21,7 +21,7 @@ class TestSudokuGenerator(unittest.TestCase):
             self.assertEqual(numbers, col)
 
     def test_boxes(self):
-        sudoku = sudoku_generater.generate_sudoku()
+        sudoku = sudoku_generator.generate_sudoku()
         numbers = set(range(1, 10))
         for outer_row in range(3):
             for outer_col in range(3):
