@@ -1,5 +1,6 @@
 # CodingInterviewWorkshop
-A bunch of problems to solve before a coding interview
+A bunch of problems to solve before a coding interview.  
+This projected has been tested with python3.
 
 Each python file has the problem description in comments at the top of the source file. Each problem has a unit test
 associated with it. Once you complete the solution run the ruby test by running:
