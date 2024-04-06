@@ -13,7 +13,8 @@ For example:
 
 **Solutions to all problems can be found in the branch solutions**
 
-My own videos that might help solving these problems:  
+My own materials that might help solving these problems:  
 * Generating mazes (helps with Sudoku puzzle): https://youtu.be/TJmPymF5Y_w
 * Knuth shuffle: https://youtu.be/i8kD33wx9Mo
 * Udemy course on Big O notation: https://www.udemy.com/course/big-o-notation-for-algorithms-in-plain-english/
+* My book on concurrent programming: [https://manning.com/books/learn-concurrent-programming-with-go](https://manning.com/books/learn-concurrent-programming-with-go?utm_source=cutajarj&utm_medium=affiliate&utm_campaign=book_cutajar_learn_12_14_22&a_aid=cutajarj&a_bid=4360d6bb)
