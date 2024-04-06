@@ -13,7 +13,7 @@ For example:
 
 **Solutions to all problems can be found in the branch solutions**
 
-My own materials that might help solving these problems:  
+My own videos/publications that might help solving some of these problems:  
 * Generating mazes (helps with Sudoku puzzle): https://youtu.be/TJmPymF5Y_w
 * Knuth shuffle: https://youtu.be/i8kD33wx9Mo
 * Udemy course on Big O notation: https://www.udemy.com/course/big-o-notation-for-algorithms-in-plain-english/
