@@ -9,10 +9,10 @@
 # each element in the array is in the range [1,9]
 
 def is_valid(sudoku):
-    numbers_rows = [1] * 9
-    numbers_cols = [1] * 9
-    numbers_box = [1] * 9
     for i in range(9):
+        numbers_rows = [1] * 9
+        numbers_cols = [1] * 9
+        numbers_box = [1] * 9
         for j in range(9):
             n_row = sudoku[j][i]
             numbers_rows[n_row - 1] = 0
